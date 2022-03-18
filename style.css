@@ -1,0 +1,87 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#header {
+	background-color: green;/*цвет фона */
+	padding-top: 10px;/*отступ текста сверху*/
+	padding-bottom: 10px;/*отступ текста снизу*/
+	font-size: 25px;/*размер текста*/
+	font-family:'Times New Roman', Times, serif;/*стиль текста*/
+	color: white; /*цвет надписи*/
+	position: fixed; /*фиксирует шапку профиля при прокрутке*/
+	left: 0; /*отступ слева*/
+	top: 0;/* расстояние сверху */
+	height: 30px;/* высота блочного элемента*/
+	width: 100%; /*ширина блока*/
+	text-align: center; /*горизонтальное выравнивание текста по отношению к блоку*/
+	z-index: 100; /*слой*/
+}
+
+#footer {
+	background-color: black; /*цвет фона подвала*/
+	color: white;/*цвет текста*/
+	height: auto;/*высота автоматическая*/
+	padding-top: 6px;/*отступ текста сверху*/
+	padding-bottom: 6px;/*отступ текста снизу*/
+	font-family:'Times New Roman', Times, serif;
+	position: fixed;/*фиксирует шарку профиля при прокрутке*/
+	left: 0;/*отступ слева*/
+	bottom: 0; /*отступ снизу*/
+	width: 100%;/*ширина блока*/
+	text-align: center;/*горизонтальное выравнивание текста по отношению к блоку*/
+	z-index: 100; /*слой*/
+	font-size: 15px; /*размер текста*/
+}
+
+#wrap {/*блок с контенте и сайдером*/
+	padding-top: 30px; /*отступ текста сверху*/
+	position: relative;
+	margin: auto;
+	min-height: 850px;
+	height: auto;
+	max-width: 700px;
+	width: 700px;
+	font-family:'Times New Roman', Times, serif;
+}
+
+#content {/*текст контент*/
+	padding-top: 40px;
+	position: absolute;
+	left: 220px;
+	/* margin: 20px; */
+	text-align: justify /*выравнивание текста по ширине*/
+}
+
+#content::selection { /*контент при наведении*/
+	color: white;
+	background-color: green;
+}
+
+#column { /*боковой блок с меню*/
+	padding-top: 20px;
+	position: absolute;
+	color: white;
+	background-color: red;
+	min-height: 850px;
+	height: auto;
+	width: 200px;
+}
+
+.side {/*блоки в меню*/
+	margin: 20px 20px 0px 50px;
+}
+
+.side:hover {/*блоки в меню при наведении*/
+	background-color: green;
+}
+
+a {/*ссылки*/
+	color: white;
+}
+
+span { /*Заглавная буква в контексте*/
+	color: red;
+	font-size: x-large;
+}
